@@ -2,3 +2,108 @@ section{
     padding-top: 50px;
     padding-bottom: 50px;   
 }
+.carousel-control-prev-icon{
+    background-image: url(../img/arrows-left.svg);
+}
+.carousel-control-next-icon{
+    background-image: url(../img/arrow-right.svg)
+}
+.carousel-control-next{
+    right: -130px;
+}
+.carousel-control-prev{
+    left: -130px;
+}
+.w-100 {
+    border: none;
+}
+.car-colors-section {
+    padding: 0 0 50px;
+}
+.car-section-title{
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.car-colors-widget{
+    display: flex;
+}
+.car-colors-widget__car img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+.car-colors-widget__title {
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+}
+.car-colors-widget__content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.car-colors-widget__colors {
+    margin: 0 0 0 -15px;
+}
+.car-colors-widget__color-label {
+    position: relative;
+    margin: 0 0 10px 15px;
+    display: inline-flex;
+}
+.car-colors-widget__color-input {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.car-colors-widget__color-preview {
+    width: 58px;
+    height: 58px;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.car-colors-widget__color-preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.car-colors-widget__color-preview::before {
+    content: "✓";
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    display: none;
+    background: rgb(255, 0, 34);
+    border-radius: 10px;
+}
+.car-colors-widget__color-input:checked ~ 
+.car-colors-widget__color-preview:before {
+    display: block;
+}
+.car-colors-widget__color-preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
