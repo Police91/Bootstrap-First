@@ -101,8 +101,13 @@ section{
     height: 100%;
     object-fit: cover;
 }
-
-
+.form__box-inner{
+    width: 460px;
+    margin-top: 60px;
+}
+.input-group{
+    width: 245px;
+}
 
 
 
